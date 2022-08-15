@@ -3,8 +3,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.chrome.ChromeOptions;
 
-class CallbackTest {
+class CallbackPozitiveTest {
     private WebDriver driver;
     @BeforeAll
     static void setUpAll() {
@@ -13,7 +14,11 @@ class CallbackTest {
     }
     @BeforeEach
     void setUp() {
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--headless");
+        driver = new ChromeDriver(options);
     }
     @AfterEach
     void tearDown() {
@@ -105,4 +110,6 @@ class CallbackTest {
         String actual = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText();
         Assertions.assertEquals(expected, actual);
     }
+
+
 }
