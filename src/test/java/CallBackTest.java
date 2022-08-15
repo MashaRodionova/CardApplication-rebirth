@@ -2,11 +2,13 @@ import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 class CallbackTest {
     private WebDriver driver;
     @BeforeAll
     static void setUpAll() {
+        WebDriverManager.chromedriver().setup();
         System.setProperty("webdriver.chrome.driver", "C:\\users\\rodio\\CardApplication\\drivers\\chromedriver.exe");
     }
     @BeforeEach
