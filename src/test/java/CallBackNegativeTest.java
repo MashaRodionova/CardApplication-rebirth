@@ -49,7 +49,7 @@ class CallbackNegativeTest {
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.className("button_theme_alfa-on-white")).click();
         String expected = "Телефон указан неверно. Должно быть 11 цифр, например, +79012345678.";
-        String actual = driver.findElement(By.cssSelector("[data-test-id=phone].input__sub")).getText();
+        String actual = driver.findElement(By.cssSelector("[data-test-id=phone] .input__sub")).getText();
         Assertions.assertEquals(expected, actual);
 
     }
