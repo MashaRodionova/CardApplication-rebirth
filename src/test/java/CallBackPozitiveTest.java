@@ -29,7 +29,7 @@ class CallbackPozitiveTest {
     // позитивные сценарии
     @Test
     void test1() {
-        driver.get("http://localhost:7777/");
+        driver.get("http://localhost:9999/");
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Маша");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79995554466");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -41,7 +41,7 @@ class CallbackPozitiveTest {
 
     @Test
     void test2() {
-        driver.get("http://localhost:7777/");
+        driver.get("http://localhost:9999/");
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Маша ела кашу");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+83336662255");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -53,7 +53,7 @@ class CallbackPozitiveTest {
 
     @Test
     void test3() {
-        driver.get("http://localhost:7777/");
+        driver.get("http://localhost:9999/");
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Маша-ела-кашу");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+53336662255");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -65,7 +65,7 @@ class CallbackPozitiveTest {
 
     @Test
     void test4() {
-        driver.get("http://localhost:7777/");
+        driver.get("http://localhost:9999/");
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Маша не ела-кашу");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+03336662255");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -77,7 +77,7 @@ class CallbackPozitiveTest {
 
     @Test
     void test5() {
-        driver.get("http://localhost:7777/");
+        driver.get("http://localhost:9999/");
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("МАША");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+73336662255");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -89,7 +89,7 @@ class CallbackPozitiveTest {
 
     @Test
     void test6() {
-        driver.get("http://localhost:7777/");
+        driver.get("http://localhost:9999/");
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("маша");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+00000000000");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -101,7 +101,7 @@ class CallbackPozitiveTest {
 
     @Test
     void test7() {
-        driver.get("http://localhost:7777/");
+        driver.get("http://localhost:9999/");
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("маша-ела кашу");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+00000000000");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();

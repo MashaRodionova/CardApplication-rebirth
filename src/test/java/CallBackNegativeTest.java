@@ -30,7 +30,7 @@ class CallbackNegativeTest {
 
  @Test
     void testName1() {
-        driver.get("http://localhost:7777/");
+        driver.get("http://localhost:9999/");
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Masha");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79995554466");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
@@ -43,7 +43,7 @@ class CallbackNegativeTest {
 
     @Test
     void testPhone1() {
-        driver.get("http://localhost:7777/");
+        driver.get("http://localhost:9999/");
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Маша");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("Маша");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
