@@ -1,1 +1,1 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/hcf4cer055ci7b2v?svg=true)](https://ci.appveyor.com/project/MashaRodionova/cardapplication)
+[![Build status](https://ci.appveyor.com/api/projects/status/wfulspbfe46yl6ax?svg=true)](https://ci.appveyor.com/project/MashaRodionova/cardapplication-rebirth)
