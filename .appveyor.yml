@@ -4,8 +4,7 @@ stack: jdk 11  # версия JDK
 
 branches:
   only:
-    - master  # ветка git
-
+    - withoutWebdriver
 
 build: off  # будем использовать свой скрипт сборки
 
