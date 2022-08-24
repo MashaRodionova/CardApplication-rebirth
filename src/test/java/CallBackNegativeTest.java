@@ -5,6 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.time.Duration;
+
 class CallbackNegativeTest {
     private WebDriver driver;
 
@@ -204,14 +206,13 @@ class CallbackNegativeTest {
 
 
     @Test
-    void testCheckbox1() {
+    void testCheckbox() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Маша");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79012345678");
         driver.findElement(By.className("button_theme_alfa-on-white")).click();
-        String expected = "#ff5c5c!important";
-        String actual = driver.findElement(By.cssSelector("[data-test-id='agreement'].input_invalid .checkbox__text")).getCssValue("color");
+        String expected = "Я соглашаюсь с условиями обработки и использования моих персональных данных и разрешаю сделать запрос в бюро кредитных историй";
+        String actual = driver.findElement(By.cssSelector("[data-test-id='agreement'].input_invalid .checkbox__text")).getText();
         Assertions.assertEquals(expected, actual);
-
     }
 
 
